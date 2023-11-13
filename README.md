@@ -1,5 +1,4 @@
 # my_react_template
-# my_react_template
 npm init
 npm install typescript --save-dev
 change index.js to index.tsx (file and configuration on package.json)

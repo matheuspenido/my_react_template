@@ -41,6 +41,15 @@ module.exports = {
     '@typescript-eslint/semi': ['error', 'always'],
     curly: 'off',
     'eol-last': 'off',
-    '@typescript-eslint/space-before-function-paren': 'off'
+    '@typescript-eslint/space-before-function-paren': 'off',
+    'no-restricted-imports': 'off',
+    '@typescript-eslint/no-restricted-imports': [
+      'warn',
+      {
+        name: 'react-redux',
+        importNames: ['useSelector', 'useDispatch'],
+        message: 'Use typed hooks "useAppDispatch" and "useAppSelector" instead.'
+      }
+    ]
   }
 };
